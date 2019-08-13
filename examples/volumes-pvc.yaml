@@ -11,11 +11,14 @@ spec:
   volumeClaimTemplates:
   - metadata:
       name: workdir
+      annotations:
+        volume.beta.kubernetes.io/storage-class: maprfs-ephemeral
+        volume.beta.kubernetes.io/storage-provisioner: mapr.com/maprfs
     spec:
       accessModes: [ "ReadWriteOnce" ]
       resources:
         requests:
-          storage: 1Gi
+          storage: 10Gi
 
   templates:
   - name: volumes-pvc-example

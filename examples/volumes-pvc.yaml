@@ -15,7 +15,7 @@ spec:
         volume.beta.kubernetes.io/storage-class: maprfs-ephemeral
         volume.beta.kubernetes.io/storage-provisioner: mapr.com/maprfs
     spec:
-      accessModes: [ "ReadWriteOnce" ]
+      accessModes: [ "ReadWriteMany" ]
       resources:
         requests:
           storage: 10Gi

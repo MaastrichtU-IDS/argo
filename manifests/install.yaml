@@ -215,7 +215,7 @@ metadata:
   name: workflow-controller-configmap
 data:
   config: |
-    ContainerRuntimeExecutor: k8sapi
+    ContainerRuntimeExecutor: kubelet
 ---
 apiVersion: v1
 kind: Service

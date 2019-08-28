@@ -15,7 +15,7 @@ spec:
         arguments:
           parameters:
           - name: server-ip
-            value: "{{steps.nginx-server.ip}}"
+            value: "{{steps.nginx-server.pod-ip}}"
 
   - name: nginx-server
     daemon: true

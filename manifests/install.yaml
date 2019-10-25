@@ -194,7 +194,7 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: argo
-  namespace: argo
+  namespace: test-vincent
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
@@ -207,7 +207,7 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: argo-ui
-  namespace: argo
+  namespace: test-vincent
 ---
 apiVersion: v1
 kind: ConfigMap

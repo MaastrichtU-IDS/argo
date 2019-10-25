@@ -140,7 +140,7 @@ subjects:
 apiVersion: v1
 data:
   config: |
-    namespace: argo
+    namespace: test-vincent
 kind: ConfigMap
 metadata:
   name: workflow-controller-configmap
